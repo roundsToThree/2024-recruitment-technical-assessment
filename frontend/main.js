@@ -135,3 +135,21 @@ function insertCourses() {
 function handleLogoClicked(element) {
     element.classList.toggle('fancy');
 }
+
+/**
+ * Stretch Task 2
+ * Handle toggling the search bar's modal
+ */
+function toggleSearchModal() {
+    const dialog = document.body.querySelector('.search-dialog');
+
+    const dialogOpen = dialog.getAttribute('isOpen') == 'true';
+    
+    if(dialogOpen)
+        dialog.close();
+    else
+        dialog.showModal();
+
+    dialog.setAttribute('isOpen', !dialogOpen);
+
+}

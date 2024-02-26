@@ -67,7 +67,7 @@
                 <span class="unilectives-subtitle">Your one-stop shop for UNSW courses and electives reviews.</span>
             </div>
             <!-- Search bar -->
-            <div class="search-container">
+            <div class="search-container" onclick="toggleSearchModal()">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -77,9 +77,10 @@
             </div>
             <div class="sort-container">
                 <span>Sort by</span>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                    stroke="currentColor" class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
-                  </svg>
+                </svg>
             </div>
 
             <div class="results-container">
@@ -144,5 +145,15 @@
 
     </main>
 </body>
+
+<dialog class="search-dialog" isOpen="false">
+    <button autofocus onclick="toggleSearchModal()">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+    </button>
+    <span>Modal content</span>
+</dialog>
 
 </html>

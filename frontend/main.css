@@ -252,3 +252,25 @@ main {
     -webkit-text-fill-color: transparent;
     font-size: 1.5rem;
 }
+
+/* Stretch Task 2 */
+dialog {
+    width: 50vw;
+    height: 50vh;
+    position: relative;
+}
+
+dialog button {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    background: none;
+    border: none;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+dialog svg {
+    width: 2rem;
+}

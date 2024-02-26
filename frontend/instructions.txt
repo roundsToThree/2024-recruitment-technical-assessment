@@ -1,2 +1,6 @@
 Please detail the instructions to view your solution here:
 
+Simply run the index.html file
+
+Tested in on Chromebook with screen size of 1536 x 864
+It may look different on a different monitor so ive attached screenshots
