@@ -50,9 +50,7 @@ let courses = [
 ]
 
 window.onload = () => {
-    insertCourses();
-    // Stretch Task 1
-    
+    insertCourses();    
 }
 
 
@@ -126,4 +124,14 @@ function insertCourses() {
         container.appendChild(outer);
 
     })
+}
+
+/**
+ * Stretch Task 1
+ * Handle clicking on the logo and changing its colour from blue to purple
+ * 
+ * @param {Element} element The Logo element
+ */
+function handleLogoClicked(element) {
+    element.classList.toggle('fancy');
 }
