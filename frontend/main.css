@@ -9,10 +9,15 @@ compatability with older browsers
 
     --page-bg: #fdfdfd;
     --nav-bg: #f9fafb;
+    --unit-bg: #fafafa;
 
     --uni-blue: #1479f2;
     --uni-light-blue: #9cade9;
     --uni-light-gray: #e5e7eb;
+    --uni-very-light-blue: #ccebf6;
+    --uni-purple: #b789e5;
+
+    --uni-gray: #a0a0a0;
 
     --nav-width: 5vw;
 }
@@ -65,7 +70,10 @@ nav a {
 
 nav svg {
     width: 50%;
+}
 
+nav svg.rot {
+    transform: rotate(-90deg) scaleX(-1);
 }
 
 nav hr {
@@ -136,4 +144,104 @@ main {
 
 .search-container input::placeholder {
     color: var(--uni-light-blue);
+}
+
+/* Sort styling */
+.sort-container {
+    border: 2px solid var(--uni-gray);
+    border-radius: 0.5rem;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2);
+    width: fit-content;
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 8vw;
+    height: 1.5rem;
+    margin: 1rem 0;
+    color: var(--uni-gray);
+    cursor: pointer;
+}
+
+.sort-container svg {
+    height: 80%;
+    color: black;
+}
+
+
+/* Units styling */
+.results-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.unit-container {
+    width: 20vw;
+    min-width: fit-content;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 2rem 1rem;
+
+    background-color: var(--unit-bg);
+    border-radius: 1rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    padding: 1.5rem 1rem;
+
+    cursor: pointer;
+}
+
+.unit-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1rem
+}
+
+.unit-code {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.chip-container {
+    margin-top: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.chip-container span {
+    background-color: var(--uni-very-light-blue);
+    border-radius: 2rem;
+    margin-right: 0.5rem;
+    padding: 4px;
+    font-size: small;
+}
+
+.review-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: -0.5rem;
+    /* Prevent highlighting stars */
+    pointer-events: none;
+    user-select: none;
+}
+
+.review-label {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+.review-star {
+    /* background-color: var(--uni-purple); */
+    background: -webkit-linear-gradient(0deg, var(--uni-purple) 70%, var(--uni-light-gray) 70%);
+    background-clip: text !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
 }
